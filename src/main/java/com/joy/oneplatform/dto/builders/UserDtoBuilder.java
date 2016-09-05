@@ -20,7 +20,7 @@ public class UserDtoBuilder {
     public UserDto build(){
         final UserDto userDto = new UserDto();
         userDto.setUserId(userId);
-        userDto.setName(userName);
+        userDto.setUserName(userName);
         return userDto;
     }
 

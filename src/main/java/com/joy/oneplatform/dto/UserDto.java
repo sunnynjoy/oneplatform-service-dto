@@ -6,7 +6,7 @@ package com.joy.oneplatform.dto;
 public class UserDto {
 
     private int userId;
-    private String name;
+    private String userName;
 
     public int getUserId() {
         return userId;
@@ -16,11 +16,11 @@ public class UserDto {
         this.userId = userId;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }
