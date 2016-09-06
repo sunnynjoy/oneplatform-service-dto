@@ -8,6 +8,8 @@ import org.junit.Test;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.ParseException;
+
 import static org.hamcrest.CoreMatchers.*;
 
 /**
@@ -24,7 +26,7 @@ public class UserDtoTest {
     }
 
     @Test
-    public void verifyObjectToJson() throws IOException {
+    public void verifyObjectToJson() throws IOException, ParseException {
         final ObjectMapper objectMapper = new ObjectMapper();
         final String userStringFromJson = new String(Files.readAllBytes(Paths.get("src/test/resources/json/user.json")));
         UserDto userDto = UserDtoBuilder.anUserDto().withDefaultValues().build();
